@@ -1,5 +1,14 @@
 # src
 
+```
+npm run build
+
+git add . 
+
+git commit -am "added latest build"
+
+git push origin `git subtree split --prefix dist master`:master --force
+```
 
 ## Commands
 Command                | Description                                      |

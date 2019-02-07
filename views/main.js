@@ -8,7 +8,7 @@ function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
   function selectTargetAudience(){
-    const audience = ["everyone", "you", "your parents", "computers", "the web", "your teacher", "your students"]
+    const audience = ["everyone", "creatives", "you", "your parents", "computers", "the web", "your teacher", "your students", "developers", "designers", "artists"]
     const randomIndex = Math.floor(Math.random()* audience.length)
     
     return audience[randomIndex]
@@ -131,7 +131,7 @@ function view (state, emit) {
         <header class="vh-100 bg-washed-green dt w-100">
           <div             
             class="dtc v-mid cover ph3 ph4-m ph5-l">
-            <h2 class="f3 fw5 black">Nautilist</h2>
+            <h2 class="f3 fw5 black flex flex-row items-center"><span><img class="w3" src="/assets/web-editor.png"></span> Nautilist</h2>
             <h1 class="f2 f-subheadline-l measure lh-title fw9">Friendly <br> Functional <br> Shareable <br> Lists for <span id="targetAudience" class="underline">Everyone</span></h1>
           </div>
         </header>
